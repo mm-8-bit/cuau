@@ -25,25 +25,9 @@
     src: url('/fonts/NeueMachina-Ultrabold.otf') format('opentype');
 }
 
-/* Force override variables on the HTML tag level */
-html:root, html body {
-    --wp--preset--font-family--body: "Neue Machina", sans-serif !important;
-    --wp--preset--font-family--heading: "Neue Machina", sans-serif !important;
-}
-
-/* Universal chain targeting to override deep block variations */
-html body *, 
-html body p, 
-html body h1, 
-html body h2, 
-html body h3, 
-html body h4, 
-html body h5, 
-html body h6, 
-html body a, 
-html body span, 
-html body div {
-    font-family: "Neue Machina", sans-serif !important;
+/* Hard override every text container element on the page */
+html, body, p, h1, h2, h3, h4, h5, h6, a, span, div, li, strong, em {
+    font-family: "Neue Machina", -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 </style>
 	
