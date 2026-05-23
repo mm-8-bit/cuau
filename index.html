@@ -2,31 +2,49 @@
 <html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
 
-
-	<style class="wp-fonts-local">
+<style class="wp-fonts-local">
 @font-face {
     font-family: "Neue Machina";
     font-style: normal;
     font-weight: 300;
-    font-display: fallback;
+    font-display: swap;
     src: url('/fonts/NeueMachina-Light.otf') format('opentype');
 }
 @font-face {
     font-family: "Neue Machina";
     font-style: normal;
     font-weight: 400;
-    font-display: fallback;
+    font-display: swap;
     src: url('/fonts/NeueMachina-Regular.otf') format('opentype');
 }
 @font-face {
     font-family: "Neue Machina";
     font-style: normal;
     font-weight: 800;
-    font-display: fallback;
+    font-display: swap;
     src: url('/fonts/NeueMachina-Ultrabold.otf') format('opentype');
 }
 
+/* Force override variables on the HTML tag level */
+html:root, html body {
+    --wp--preset--font-family--body: "Neue Machina", sans-serif !important;
+    --wp--preset--font-family--heading: "Neue Machina", sans-serif !important;
+}
 
+/* Universal chain targeting to override deep block variations */
+html body *, 
+html body p, 
+html body h1, 
+html body h2, 
+html body h3, 
+html body h4, 
+html body h5, 
+html body h6, 
+html body a, 
+html body span, 
+html body div {
+    font-family: "Neue Machina", sans-serif !important;
+}
 </style>
 	
 	
